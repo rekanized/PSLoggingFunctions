@@ -13,9 +13,9 @@ These logging functions will create a Logs folder if it does no already exist in
 Write-Log -Type UPDATE -Message "Updating user catalog" -Active $True
 ```
 
-* If you want an additional LineBreak
+* If you only want to add a LineBreak
 ```
-Write-Log -Type UPDATE -Message "Updating user catalog" -Active $True -LineBreak
+Write-Log -LineBreak -Active $True -LineBreak
 ```
 
 * This logg function can be used when running external retrievals, pushes or changes and you will recieve a log if something goes wrong.
