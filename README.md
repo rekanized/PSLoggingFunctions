@@ -15,7 +15,7 @@ Write-Log -Type UPDATE -Message "Updating user catalog" -Active $True
 
 * If you only want to add a LineBreak
 ```
-Write-Log -LineBreak -Active $True -LineBreak
+Write-Log -LineBreak -Active $True
 ```
 
 * This logg function can be used when running external retrievals, pushes or changes and you will recieve a log if something goes wrong.
