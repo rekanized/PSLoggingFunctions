@@ -2,7 +2,7 @@
 Powershell Logging Functions
 
 ## Installation
-Add the LoggingFunctions folder to your Powershell Modules Repository!
+Add the LoggingFunctions folder to your Powershell Modules Repository!<br>
 Default Path for Windows = "C:\Program Files\WindowsPowerShell\Modules"
 
 ## How to use example
