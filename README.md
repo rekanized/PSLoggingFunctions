@@ -5,8 +5,8 @@ Add the LoggingFunctions folder to your Powershell Modules Repository!<br>
 Default Path for Windows = "C:\Program Files\WindowsPowerShell\Modules"
 
 # Example of log
-2024-01-17 09:32:04.096 - USER: myuser - GET - Retrieving data
-2024-01-17 09:32:04.306 - USER: myuser - WARNING - You ran into an error when trying to: Retrieving data
+2024-01-17 09:32:04.096 - USER: myuser - GET - Retrieving data<br>
+2024-01-17 09:32:04.306 - USER: myuser - WARNING - You ran into an error when trying to: Retrieving data<br>
 2024-01-17 09:32:04.317 - USER: myuser - ERROR - The remote server returned an error: (403) Forbidden.
 
 # How to use example
