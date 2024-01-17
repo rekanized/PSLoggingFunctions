@@ -11,17 +11,18 @@ function Write-Log {
     )
     if ($Active -eq $true) {
         $DateTime = Get-Date -Format "yyyy-MM-dd HH:mm:ss.fff"
+        $LogMessage = "$($DateTime) - USER: $env:USERNAME - $Type - $Message"
         if (Test-Path -Path ".\Logs"){
             if ($LineBreak){
                 Add-Content -Path $Path -Value " "
                 return ""
             }
-            Add-Content -Path $Path -Value "$($DateTime) - USER: $env:USERNAME - $Type - $Message"
+            Add-Content -Path $Path -Value $LogMessage
         }
         else {
             Write-Host "Creating new 'Logs' folder within ." -ForegroundColor Yellow
             New-Item -Path . -Name Logs -ItemType Directory -Confirm:$false | Out-Null
-            Add-Content -Path $Path -Value "$($DateTime) - USER: $env:USERNAME - $Type - $Message"
+            Add-Content -Path $Path -Value $LogMessage
         }
     }
 }
