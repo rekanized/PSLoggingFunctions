@@ -1,5 +1,4 @@
-# PSLoggingFunctions
-Powershell Logging Functions
+Simple Powershell Logging Functions
 
 ## Installation
 Add the LoggingFunctions folder to your Powershell Modules Repository!<br>
