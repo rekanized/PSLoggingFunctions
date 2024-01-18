@@ -13,18 +13,18 @@ Default Path for Windows = "C:\Program Files\WindowsPowerShell\Modules"
 These logging functions will create a Logs folder if it does no already exist in your root directory!
 
 ## Normal log
-```
+```powershell
 Write-Log -Type UPDATE -Message "Updating user catalog" -Active $True
 ```
 
 ## If you only want to add a LineBreak
-```
+```powershell
 Write-Log -LineBreak -Active $True
 ```
 
 ## This log function is a wrapper for a Try Catch
 Whatever you put within the ScriptBlock will run and if it gives you an error.<br>You will then receive the error message both in the Log file and in the CLI.
-```
+```powershell
 Invoke-TryCatchLog -InfoLog "Retrieving users from Graph API" -LogToFile $True -ScriptBlock {
     Invoke-RestMethod -Method GET -Uri "GraphAPIEndPoint" -Headers $graphAuthenticationHeader
 }
