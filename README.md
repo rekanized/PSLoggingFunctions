@@ -22,7 +22,8 @@ Write-Log -Type UPDATE -Message "Updating user catalog" -Active $True
 Write-Log -LineBreak -Active $True
 ```
 
-## This log function can be used when running external retrievals, pushes or changes and you will recieve a log if something goes wrong.
+## This log function is a wrapper for a Try Catch
+Whatever you put within the ScriptBlock will run and if it gives you an error.<br>You will then receive the error message both in the Log file and in the CLI.
 ```
 Invoke-TryCatchLog -InfoLog "Retrieving users from Graph API" -LogToFile $True -ScriptBlock {
     Invoke-RestMethod -Method GET -Uri "GraphAPIEndPoint" -Headers $graphAuthenticationHeader
