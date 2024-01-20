@@ -6,7 +6,7 @@ Install-Module -Name PSLoggingFunctions
 ```
 
 # Offline Installation
-Just run the OfflineInstallation.ps1 as Administrator
+Just run the OfflineInstallation.ps1 as Administrator<br>
 PS: You need to download all the files into the same directory and then run the script, they will then be copied to the Users PSModuleDirectory.
 
 # Example of log
