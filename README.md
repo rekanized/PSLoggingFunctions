@@ -1,10 +1,8 @@
 Simple Powershell Logging Functions
 
 # Installation
-## Download this PowerShell Module and all Required PowerShell Modules and place them in your PSModulePath folder<br>
-You can use this command to show your available locations
 ```powershell 
-$env:PSModulePath -split ";"
+Install-Module -Name PSLoggingFunctions
 ``` 
 
 # Example of log
