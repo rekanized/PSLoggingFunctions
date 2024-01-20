@@ -1,8 +1,11 @@
 Simple Powershell Logging Functions
 
 # Installation
-Add the LoggingFunctions folder to your Powershell Modules Repository!<br>
-Default Path for Windows = "C:\Program Files\WindowsPowerShell\Modules"
+## Download this PowerShell Module and all Required PowerShell Modules and place them in your PSModulePath folder<br>
+You can use this command to show your available locations
+```powershell 
+$env:PSModulePath -split ";"
+``` 
 
 # Example of log
 2024-01-17 09:32:04.096 - USER: myuser - GET - Retrieving data<br>
