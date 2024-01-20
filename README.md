@@ -3,7 +3,11 @@ Simple Powershell Logging Functions
 # Installation
 ```powershell 
 Install-Module -Name PSLoggingFunctions
-``` 
+```
+
+# Offline Installation
+Just run the OfflineInstallation.ps1 as Administrator
+PS: You need to download all the files into the same directory and then run the script, they will then be copied to the Users PSModuleDirectory.
 
 # Example of log
 2024-01-17 09:32:04.096 - USER: myuser - GET - Retrieving data<br>
