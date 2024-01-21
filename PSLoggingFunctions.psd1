@@ -12,7 +12,7 @@
     # RootModule = ''
 
     # Version number of this module.
-    ModuleVersion = '1.0.1'
+    ModuleVersion = '1.0.2'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -75,7 +75,10 @@
     )
 
     # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-    CmdletsToExport = @()
+    CmdletsToExport = @(
+        "Invoke-TryCatchLog",
+        "Write-Log"
+    )
 
     # Variables to export from this module
     VariablesToExport = '*'
