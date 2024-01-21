@@ -20,7 +20,7 @@ function Write-Log {
             Add-Content -Path $Path -Value $LogMessage
         }
         else {
-            Write-Host "Creating new 'Logs' folder within ." -ForegroundColor Yellow
+            Write-Host "Creating new 'Logs' folder within: $PSScriptRoot" -ForegroundColor Yellow
             New-Item -Path . -Name Logs -ItemType Directory -Confirm:$false | Out-Null
             Add-Content -Path $Path -Value $LogMessage
         }
