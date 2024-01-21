@@ -1,4 +1,4 @@
-Simple Powershell Logging Functions
+Simple and Easy Powershell Logging Functions
 
 # Installation
 ```powershell 
